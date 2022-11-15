@@ -9,7 +9,44 @@ project(main_node)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  rospy
+  message_generation
+  std_msgs
+  geometry_msgs
+
 )
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  geometry_msgs
+)
+
+catkin_package(
+  CATKIN_DEPENDS 
+  message_runtime 
+  roscpp 
+  rosgraph_msgs 
+  rospy 
+  std_msgs
+  geometry_msgs
+)
+
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+add_executable(main src/nodes/main_node.cpp src/main.cpp)
+target_link_libraries(main ${catkin_LIBRARIES})
+
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+add_executable(listener src/nodes/listener_node.cpp src/listener.cpp)
+target_link_libraries(main ${catkin_LIBRARIES})
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+add_executable(talker src/nodes/talker_node.cpp src/talker.cpp)
+target_link_libraries(main ${catkin_LIBRARIES})
+
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
