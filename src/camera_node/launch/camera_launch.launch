@@ -1,0 +1,4 @@
+<launch>
+  <!-- The talker node will publish a custom message. -->
+  <node pkg="camera_node" type="camera_node" name="camera_node">
+</launch>
