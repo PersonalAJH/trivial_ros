@@ -1,12 +1,12 @@
-#include <node_example/talker.h>
+#include <jh_publisher.h>
 
 int main(int argc, char **argv)
 {
-  // Set up ROS.
-  ros::init(argc, argv, "talker");
+
+  ros::init(argc, argv, "pub_node");
   ros::NodeHandle nh;
 
-  // Create a new node_example::Talker object.
+
   node_example::ExampleTalker node(nh);
 
   // Let ROS handle all callbacks.
