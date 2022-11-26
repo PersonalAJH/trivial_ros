@@ -1,16 +1,13 @@
-#include <node_example/listener.h>
+#include <listener.h>
 
 int main(int argc, char **argv)
 {
-  // Set up ROS.
-  ros::init(argc, argv, "listener");
+  ros::init(argc, argv, "sub_node");
   ros::NodeHandle nh;
 
-  // Create a new node_example::Talker object.
-  node_example::ExampleListener node(nh);
+  Listner::Listner node(nh);
 
-  // Let ROS handle all callbacks.
   ros::spin();
 
   return 0;
-}  // end main()
+}
