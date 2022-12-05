@@ -39,11 +39,11 @@ target_link_libraries(main ${catkin_LIBRARIES})
 
 
 include_directories(include ${catkin_INCLUDE_DIRS})
-add_executable(listener src/nodes/listener_node.cpp src/listener.cpp)
+add_executable(sub_node src/nodes/sub_node.cpp src/sub_node.cpp)
 target_link_libraries(main ${catkin_LIBRARIES})
 
 include_directories(include ${catkin_INCLUDE_DIRS})
-add_executable(talker src/nodes/talker_node.cpp src/talker.cpp)
+add_executable(pub_node src/nodes/pub_node.cpp src/pub_node.cpp)
 target_link_libraries(main ${catkin_LIBRARIES})
 
 
