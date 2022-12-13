@@ -4,11 +4,8 @@ developing
 
 
 workspace_folder/        -- WORKSPACE
-
 start_ros.sh              -- start shell file
-
   src/                   -- SOURCE SPACE
-  
     CMakeLists.txt       -- 'Toplevel' CMake file, provided by catkin
     
     main_node/
