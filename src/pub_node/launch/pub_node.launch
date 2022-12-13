@@ -10,5 +10,5 @@
     <param name="param2" value="$(arg param2)"/>
   </node>
 
-  <include file="$(find node_example)/launch/tools.launch"/>
+  <include file="$(find pub_node)/launch/tools.launch"/>
 </launch>

@@ -13,7 +13,7 @@ namespace robot_node
 
   void RobotNode::start()
   {
-    pub_ = nh_.advertise<node_example::NodeExampleData>("example", 10);
+    pub_ = nh_.advertise<robot_node::NodeExampleData>("example", 10);
   }
 
   void RobotNode::stop()
