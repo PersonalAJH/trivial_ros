@@ -49,7 +49,26 @@
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
+  
+
+
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>jh_msgs</build_depend>
+  <build_depend>sensors_msg</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>ns_finder</build_depend>
   <build_depend>roscpp</build_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>jh_msgs</run_depend>
+  <run_depend>sensors_msg</run_depend>
+  <run_depend>message_generation</run_depend>
+  <run_depend>ns_finder</run_depend>
+  <run_depend>roscpp</run_depend>
+
+
   <build_export_depend>roscpp</build_export_depend>
   <exec_depend>roscpp</exec_depend>
 
