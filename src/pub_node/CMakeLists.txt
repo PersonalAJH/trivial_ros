@@ -22,9 +22,18 @@ catkin_package(
  DEPENDS system_lib
 )
 
+
+
+
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
+
+add_message_files(
+  FILES
+  HeaderedString.msg
+)
+
 
 
 include_directories(include ${catkin_INCLUDE_DIRS})

@@ -6,7 +6,7 @@ float32 x
 float32 y
 
 # 2D information
-torooc_msgs/FaceBoundingBox bbox
+jh_msgs/FaceBoundingBox bbox
 
 # is_valid or not
 bool seen
