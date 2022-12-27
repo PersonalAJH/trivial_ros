@@ -6,7 +6,7 @@
 #include <ros/time.h>
 
 
-namespace RobotNode
+namespace jh_example
 {
 class RobotNode
 {
@@ -15,8 +15,6 @@ class RobotNode
   explicit RobotNode(ros::NodeHandle nh);
 
  private:
-  void configCallback(RobotNode::nodeExampleConfig &config, uint32_t level);
-
   void timerCallback(const ros::TimerEvent &event);
 
   void start();

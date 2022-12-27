@@ -1,6 +1,0 @@
-<launch>
-  <node pkg="sub_node" type="sub_node" name="sub_node">
-  </node>
-
-  <include file="$(find sub_node)/launch/tools.launch"/>
-</launch>

@@ -1,14 +1,12 @@
 <launch>
-  <arg name="version" default="t1"/>
-  <arg name="param1" default="33"/>
-  <arg name="param2" default="0"/>
+  <arg name="robot_version" default="t1"/>
+  <arg name="test_param" default="33"/>
 
 
   <node pkg="pub_node" type="pub_node" name="pub_node">
-    <param name="version" value="$(arg version)"/>
-    <param name="param1" value="$(arg param1)"/>
-    <param name="param2" value="$(arg param2)"/>
+    <param name="robot_version" value="$(arg robot_version)"/>
+    <param name="test_param" value="$(arg test_param)"/>
   </node>
 
-  <include file="$(find pub_node)/launch/tools.launch"/>
+  <include file="$(find node_example)/launch/tools.launch"/>
 </launch>
