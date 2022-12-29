@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(camera_node)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -33,11 +33,10 @@ generate_messages(DEPENDENCIES std_msgs sensor_msgs)
 ## Build talker and listener
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(camera_node src/talker.cpp)
+add_executable(camera_node src/camera_node.cpp)
 target_link_libraries(camera_node ${catkin_LIBRARIES})
-add_dependencies(camera_node beginner_tutorials_generate_messages_cpp)
 
 add_executable(camera_node src/camera_pynode.py)
 target_link_libraries(camera_node ${catkin_LIBRARIES})
 
-#jh 모르겠다 add_dependencies 
+

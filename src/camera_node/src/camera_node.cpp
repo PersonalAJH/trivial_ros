@@ -1,5 +1,6 @@
 #include "opencv2/opencv.hpp"
-#include "camera_node.h"
+#include <camera_node/camera_node.h>
+
 
 using namespace std;
 // using namespace cv;
