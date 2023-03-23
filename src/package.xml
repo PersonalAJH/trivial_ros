@@ -34,10 +34,10 @@
   <!-- Use depend as a shortcut for packages that are both build and exec dependencies -->
   <!--   <depend>roscpp</depend> -->
   <!--   Note that this is equivalent to the following: -->
-  <!--   <build_depend>roscpp</build_depend> -->
   <!--   <exec_depend>roscpp</exec_depend> -->
-  <!-- Use build_depend for packages you need at compile time: -->
-  <!--   <build_depend>message_generation</build_depend> -->
+  <!--   <exec_depend>roscpp</exec_depend> -->
+  <!-- Use exec_depend for packages you need at compile time: -->
+  <!--   <exec_depend>message_generation</exec_depend> -->
   <!-- Use build_export_depend for packages you need in order to build against this package: -->
   <!--   <build_export_depend>message_generation</build_export_depend> -->
   <!-- Use buildtool_depend for build tool packages: -->
@@ -52,13 +52,13 @@
   
 
 
-  <build_depend>rospy</build_depend>
-  <build_depend>std_msgs</build_depend>
-  <build_depend>jh_msgs</build_depend>
-  <build_depend>sensors_msg</build_depend>
-  <build_depend>message_generation</build_depend>
-  <build_depend>ns_finder</build_depend>
-  <build_depend>roscpp</build_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>jh_msgs</exec_depend>
+  <exec_depend>sensors_msg</exec_depend>
+  <exec_depend>message_generation</exec_depend>
+  <exec_depend>ns_finder</exec_depend>
+  <exec_depend>roscpp</exec_depend>
 
   <run_depend>rospy</run_depend>
   <run_depend>std_msgs</run_depend>
