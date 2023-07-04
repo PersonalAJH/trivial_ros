@@ -6,8 +6,10 @@ using namespace cv;
 
 CameraNode::CameraNode(){
    cap = cv::VideoCapture(0);
-   cap.set(CV_CAP_PROP_FRAME_WIDTH, 1920);
-   cap.set(CV_CAP_PROP_FRAME_HEIGHT, 1080);
+   // cap.set(CV_CAP_PROP_FRAME_WIDTH, 1920);
+   // cap.set(CV_CAP_PROP_FRAME_HEIGHT, 1080);
+   cap.set(CAP_PROP_FRAME_WIDTH, 1920);
+   cap.set(CAP_PROP_FRAME_HEIGHT, 1080);
 }
 
 int CameraNode::run(){
@@ -32,7 +34,8 @@ int main(int argc, char **argv){
    ros::NodeHandle nh;
    image_transport::ImageTransport it(nh);
    image_transport::Publisher pub = it.advertise("camera/image", 1);
-   cv::Mat image = cv::imread(argv[1], CV_LOAD_IMAGE_COLOR);
+   cv::Mat image = cv::imread(argv[1], IMREAD_COLOR);
+   // cv::Mat image = cv::imread(argv[1], CV_LOAD_IMAGE_COLOR);  
    cv::waitKey(30);
    sensor_msgs::ImagePtr msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", image).toImageMsg();
 
