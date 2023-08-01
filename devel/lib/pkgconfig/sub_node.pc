@@ -1,8 +1,0 @@
-prefix=/root/docker/trivial_ros/devel
-
-Name: sub_node
-Description: Description of sub_node
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

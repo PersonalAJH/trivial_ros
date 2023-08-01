@@ -1,8 +1,0 @@
-prefix=/root/docker/trivial_ros/devel
-
-Name: py_pub
-Description: Description of py_pub
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

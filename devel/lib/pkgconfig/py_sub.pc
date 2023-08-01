@@ -1,8 +1,0 @@
-prefix=/root/docker/trivial_ros/devel
-
-Name: py_sub
-Description: Description of py_sub
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

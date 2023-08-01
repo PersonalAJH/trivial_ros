@@ -1,8 +1,0 @@
-prefix=/root/docker/trivial_ros/install
-
-Name: camera_node
-Description: Description of camera_node
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: cv_bridge

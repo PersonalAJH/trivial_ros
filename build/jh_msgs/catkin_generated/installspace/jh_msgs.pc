@@ -1,8 +1,0 @@
-prefix=/root/docker/trivial_ros/install
-
-Name: jh_msgs
-Description: Description of jh_msgs
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
