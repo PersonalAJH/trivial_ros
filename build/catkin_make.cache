@@ -1,0 +1,2 @@
+py_pub:py_sub
+-DCATKIN_DEVEL_PREFIX=/root/docker/trivial_ros/devel -DCMAKE_INSTALL_PREFIX=/root/docker/trivial_ros/install -G Unix Makefiles

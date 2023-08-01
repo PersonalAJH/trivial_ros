@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/docker/trivial_ros/devel/setup.sh
