@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="hog_node" type="hog.py" name="hog_node" output="screen">
+    </node>
+
+    <node pkg="control_node" type="control_node" name="control_node" output="screen">
+    </node>
+</launch>
