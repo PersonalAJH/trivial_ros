@@ -1,0 +1,18 @@
+다른파일에서 사용하기 위해서 package.xml 파일에 넣고
+<build_depend>jh_msgs</build_depend>
+<exec_depend>jh_msgs</exec_depend>
+
+
+CMakeList.txt 에 넣고 
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  jh_msgs
+)
+
+다른 소스 코드에서 이걸 추가해야한다.
+#include "jh_msgs/ex1_message.h"
+
+ex1_message.h 파일은 없지만 ROS 빌드 시스템이 .msg 파일에서 자동으로 C++ 헤더 파일을 생성합니다. 
+이 과정은 catkin_make 또는 해당하는 빌드 명령을 실행할 때 자동으로 이루어집니다.
